@@ -1,0 +1,157 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  padding: 60px 10%;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+  transition: 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.wishlist-btn.active {
+  color: red;
+}
+
+.product-card img {
+  width: 85%;
+  height: 230px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.07);
+}
+
+.product-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+  min-height: 48px;
+}
+
+.product-card p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton div {
+  background: linear-gradient(90deg,
+      #eeeeee 25%,
+      #dddddd 37%,
+      #eeeeee 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 8px;
+}
+
+.skeleton-img {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.skeleton-text {
+  height: 20px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}
+
+.skeleton-btn {
+  height: 40px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.error-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.error-container h2 {
+  color: #e11d48;
+  font-size: 22px;
+  background: #ffe4e6;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.error-container button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  border-radius: 5px;
+}

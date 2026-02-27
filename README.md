@@ -14,3 +14,60 @@ The React Compiler is currently not compatible with SWC. See [this issue](https:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# 🛍️ NexoraCart – React E-Commerce Application
+
+NexoraCart is a modern e-commerce web application built using React.  
+It fetches products dynamically from a public API and displays them in a clean, responsive product grid layout with wishlist functionality and skeleton loading.
+
+---
+
+## 🚀 Live Features
+
+- 🛒 Dynamic product listing from API
+- ❤️ Wishlist toggle button (like/unlike)
+- 💀 Skeleton loading animation
+- ⚠️ Error handling using try-catch
+- 🔄 Loading state management
+- 📱 Fully responsive design
+- 🎨 Modern professional UI
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Functional Components)
+- JavaScript (ES6+)
+- CSS3
+- Fetch API
+- FakeStore API
+
+---
+
+## 📦 API Used
+
+Products are fetched from:
+
+https://fakestoreapi.com/products
+
+---
+
+## 🧠 React Concepts Used
+
+### 🔹 useState
+
+`useState` is used to manage component state.
+
+In this project, useState is used for:
+
+- Storing product data
+- Handling loading state
+- Handling error state
+- Managing wishlist toggle (liked state)
+
+Example:
+
+```javascript
+const [products, setProducts] = useState([]);
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState(null);

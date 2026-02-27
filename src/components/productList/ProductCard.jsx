@@ -13,7 +13,7 @@ const ProductCard = ({ title, price, image }) => {
             </button>
             <img src={image} alt={title} />
             <h3>{title}</h3>
-            <p>₹ {price}/-</p>
+            <p>$ {price}/-</p>
             <button className="add-cart-btn">Add to Cart</button>
         </section>
     )

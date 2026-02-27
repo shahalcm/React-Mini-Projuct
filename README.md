@@ -15,22 +15,23 @@ The React Compiler is currently not compatible with SWC. See [this issue](https:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-# 🛍️ NexoraCart – React E-Commerce Application
+# 🛍️ NexoraCart – Modern React E-Commerce App
 
-NexoraCart is a modern e-commerce web application built using React.  
-It fetches products dynamically from a public API and displays them in a clean, responsive product grid layout with wishlist functionality and skeleton loading.
+NexoraCart is a modern e-commerce web application built with React.  
+It dynamically fetches product data from an external API and displays it in a responsive grid layout with skeleton loading, wishlist functionality, and professional error handling.
 
 ---
 
-## 🚀 Live Features
+## 🚀 Features
 
 - 🛒 Dynamic product listing from API
-- ❤️ Wishlist toggle button (like/unlike)
-- 💀 Skeleton loading animation
+- ❤️ Wishlist toggle (like/unlike products)
+- 💀 Skeleton loading UI (shimmer animation)
 - ⚠️ Error handling using try-catch
+- 🔁 Retry button for failed API requests
 - 🔄 Loading state management
-- 📱 Fully responsive design
-- 🎨 Modern professional UI
+- 📱 Fully responsive layout
+- 🎨 Clean and modern UI design
 
 ---
 
@@ -40,7 +41,7 @@ It fetches products dynamically from a public API and displays them in a clean, 
 - JavaScript (ES6+)
 - CSS3
 - Fetch API
-- FakeStore API
+- FakeStore API / Escuela API
 
 ---
 
@@ -48,7 +49,7 @@ It fetches products dynamically from a public API and displays them in a clean, 
 
 Products are fetched from:
 
-https://fakestoreapi.com/products
+https://api.escuelajs.co/api/v1/products
 
 ---
 
@@ -56,14 +57,12 @@ https://fakestoreapi.com/products
 
 ### 🔹 useState
 
-`useState` is used to manage component state.
+Used for managing:
 
-In this project, useState is used for:
-
-- Storing product data
-- Handling loading state
-- Handling error state
-- Managing wishlist toggle (liked state)
+- Product data
+- Loading state
+- Error state
+- Wishlist toggle state
 
 Example:
 
